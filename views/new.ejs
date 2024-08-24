@@ -6,14 +6,18 @@
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Message Board</title>
-    <!--<link href=../public/style.css rel=stylesheet>-->
-    <!-----<link rel="icon" type="image/x-icon" href="assets/WeatherIcon.png"> -->
+    <link href=./style.css rel=stylesheet>
+    <link href=./newStyle.css rel=stylesheet>
+    <link rel="icon" type="image/x-icon" href="./message.png"> 
 </head>
 <body>
-
+  <nav class="nav">
+    <h1>Message_Board</h1>
+    <button onclick="window.location.href='/'" class="link">Return</button>
+  </nav>
 <form method="POST" action="/new"> 
-  <input type="text" name="author">
-  <input type="text" name="message">
+  <input type="text" name="author" placeholder="Author...">
+  <textarea name="message" id="message" placeholder="Message..."></textarea>
   <button type="submit">Submit</button>
 </form>
 

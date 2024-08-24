@@ -1,0 +1,31 @@
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+form > *{
+    width: 50%;
+    background-color: black;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+input{
+    height: 2rem;
+}
+
+textarea{
+    height: 30rem;
+    padding: 10px;
+    resize: none;
+}

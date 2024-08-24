@@ -1,0 +1,61 @@
+@import url("Roboto.zip");
+
+:root{
+  --dark-grey: #212429;
+}
+
+*{
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+body{
+  background-color: var(--dark-grey);
+  width: 100vw;
+}
+
+.nav{
+  height: 80px;
+  width: 100vw;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  padding-left: 5%;
+  padding-right: 5%;
+  justify-content: space-between;
+}
+
+h1{
+  font-size: 2rem;
+}
+
+.link{
+  height: 2rem;
+  font-size: 1.2rem;
+  background-color: #000;
+  border-style: none;
+  width: 200px;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+.link:hover{
+  opacity: 60%;
+  transition: 0.5s;
+  color: #432973;
+}
+
+.messages{
+  width: 50vw;
+  margin: auto;
+}
+
+.message{
+  font-size: 1.2rem;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+

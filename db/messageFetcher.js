@@ -1,14 +1,9 @@
 const messages = [
   {
-    text: "Hi there!",
-    user: "Amando",
-    added: new Date()
+    text: "You can create a new message and it will appear here!!!",
+    user: "Pablo",
+    added: (String(new Date()).substring(0, 24) + "  UTC")
   },
-  {
-    text: "Hello World!",
-    user: "Charles",
-    added: new Date()
-  }
 ];
 
 module.exports = messages;

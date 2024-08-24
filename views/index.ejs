@@ -10,14 +10,18 @@
     <link rel="icon" type="image/x-icon" href="./message.png"> 
 </head>
 <body>
-
-  <% messages.forEach((message) =>{ %>
-    <div>
-      <div><%= message.text %></div>
-      <div><%= message.user %></div>
-      <div><%= message.added %></div>
-    </div>
-  <% }); %>
-
+  <nav class="nav">
+    <h1>Message_Board</h1>
+    <button onclick="window.location.href='/new'" class="link">New Message</button>
+  </nav>
+  <div class="messages">
+    <% messages.forEach((message) =>{ %>
+      <div class="message">
+        <div class="text"><%= message.text %></div>
+        <div class="user"><%= message.user %></div>
+        <div><%= message.added %></div>
+      </div>
+    <% }); %>
+  </div>
 </body>
 </html>
